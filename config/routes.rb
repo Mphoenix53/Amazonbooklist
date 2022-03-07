@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   put    '/authors/:id',     to:"authors#update"
   delete '/authors/:id',     to:"authors#destroy"
 
+  get 'authors/:authors_id/books',  to:"book#index"
+ 
+
  end
 
 end
